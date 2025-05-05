@@ -108,6 +108,14 @@ const Footer: React.FC = () => {
           <p className="text-neutral-400 text-sm">
             &copy; {new Date().getFullYear()} Advocacia Moraes. Todos os direitos reservados.
           </p>
+          <div className="flex space-x-4 mt-4 md:mt-0">
+            <a
+              href="#privacy-policy"
+              className="text-neutral-300 hover:text-white transition-colors duration-300"
+            >
+              Desenvolvido por <span className="text-gold-400">Gustavo Moraes</span>  
+            </a>
+            </div>
           <button
             onClick={scrollToTop}
             className="mt-4 md:mt-0 bg-primary-700 hover:bg-gold-600 p-2 rounded-full transition-colors duration-300"

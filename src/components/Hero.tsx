@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           Advocacia <span className="text-gold-400">Moraes</span>
         </h1>
         <p className="text-xl md:text-2xl mb-10 max-w-3xl animate-slide-up opacity-90">
-          Excelência jurídica e compromisso com os interesses de nossos clientes. Conte com uma equipe especializada para defender seus direitos.
+          Excelência jurídica e compromisso com os interesses de nossos clientes. Conte com um atendimento especializado para defender seus direitos.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 animate-slide-up">
