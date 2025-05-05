@@ -1,0 +1,48 @@
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      @apply font-sans text-neutral-800 bg-neutral-50;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      @apply font-serif text-primary-800 leading-tight;
+    }
+  }
+
+  @layer components {
+    .section-container {
+      @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+    }
+    
+    .section-title {
+      @apply text-4xl md:text-5xl font-bold mb-8 relative text-center;
+    }
+    
+    .section-title::after {
+      content: '';
+      @apply absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gold-600 mt-2;
+    }
+    
+    .btn {
+      @apply px-6 py-3 rounded-md font-medium transition duration-300 inline-flex items-center justify-center;
+    }
+    
+    .btn-primary {
+      @apply bg-primary-800 text-white hover:bg-primary-700;
+    }
+    
+    .btn-secondary {
+      @apply bg-gold-600 text-white hover:bg-gold-500;
+    }
+    
+    .btn-outline {
+      @apply border-2 border-primary-800 text-primary-800 hover:bg-primary-800 hover:text-white;
+    }
+  }
